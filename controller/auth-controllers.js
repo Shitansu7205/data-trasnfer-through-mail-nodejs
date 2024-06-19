@@ -23,7 +23,9 @@ const getData = async (req, res) => {
         from: process.env.EMAIL, // Sender address
         to: 'shitansukumargochhayat@gmail.com', // List of receivers
         subject: 'Contact Form Submission', // Subject line
-        text: `You have a new contact form submission:\n\nName: ${data.name}\nRoll: ${data.roll}`, // Plain text body
+        text: `You have a new contact form submission:\n\nName: ${data.name}\nRoll: ${data.email}\nRoll: ${data.datetimepicker}\n
+        Roll: ${data.datetimepickercheck}\nRoll: ${data.pax}\nRoll: ${data.contact}\nRoll: ${data.msg}`, // Plain text body
+        
     };
 
     try {
